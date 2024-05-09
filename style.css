@@ -8,10 +8,12 @@
 	--primary-color: #049c04;
 	--secondary-color: #cd6007;
 	--grey-color: #464646;
-	--light-grey-color: #d8d8d8;
+	--grey-transparent: #d8d8d8ac;
+	--light-grey-color: #e0e0e0;
 	--white-color: #ffffff;
 	--black-color: #000000;
 	font-size: 16px;
+	--border-radius: 0.2rem;
 }
 
 body {
@@ -75,7 +77,7 @@ li {
 
 /* ************** Header *************** */
 header {
-	box-shadow: 0 0 5px 0 var(--grey-color);
+	box-shadow: 0 10px 5px -10px var(--grey-color);
 	padding: 0 1rem;
 }
 
@@ -89,6 +91,7 @@ header {
 
 header img {
 	width: 6rem;
+	min-height: 100%;
 }
 
 .navbar {
@@ -108,7 +111,7 @@ header img {
 	margin-left: 0.3rem;
 }
 
-.navbar li {
+.navbar {
 	position: relative;
 }
 
@@ -119,8 +122,9 @@ header img {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	box-shadow: 0 0 5px 0 var(--grey-color);
-	border-radius: 0.2rem;
+	border: 1px solid var(--light-grey-color);
+	box-shadow: 0 10px 5px -10px var(--grey-color);
+	border-radius: var(--border-radius);
 	top: 1.5rem;
 	z-index: 200;
 }
@@ -203,17 +207,23 @@ header img {
 
 .big-list {
 	position: absolute;
-	min-width: 70vw;
-}
-
-.big-list-items {
-	text-align: left;
+	min-width: max-content;
+	left: -190%;
+	top: 1.5rem;
 	background-color: var(--light-grey-color);
+	box-shadow: 0 30px 20px -30px var(--grey-color);
+	border-radius: var(--border-radius);
+	gap: 2.5rem;
+	z-index: 200;
 	padding: 2rem;
 }
 
 .big-list-items h4 {
 	padding-bottom: 0.5rem;
+}
+
+.big-list-items a {
+	font-size: 0.7rem;
 }
 
 .big-list-items ul {
@@ -222,6 +232,32 @@ header img {
 	justify-content: center;
 	align-items: flex-start;
 	gap: 0.5rem;
+}
+
+.big-list-img-item img {
+	width: 7rem;
+	height: 100%;
+	object-fit: cover;
+	border-radius: var(--border-radius);
+}
+
+.most-wanted {
+	position: absolute;
+	left: 10%;
+	right: 10%;
+	bottom: 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--grey-transparent);
+	border-radius: var(--border-radius);
+	padding: 0.5rem 1rem;
+	text-align: center;
+}
+
+.big-list-img-item {
+	position: relative;
 }
 
 /* ***********Media Queries **************** */
