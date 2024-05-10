@@ -46,7 +46,7 @@
 						<li><a href="">Sign Up</a></li>
 						<li><a href="">My Account</a></li>
 						<li><a href="">Orders</a></li>
-						<li>
+						<li class="has-child">
 							<a href=""
 								>USD<span><i class="fa-solid fa-chevron-down"></i></span
 							></a>
@@ -57,7 +57,7 @@
 								<li>REA</li>
 							</ul>
 						</li>
-						<li>
+						<li class="has-child">
 							<a href=""
 								>English<span><i class="fa-solid fa-chevron-down"></i></span
 							></a>
@@ -84,7 +84,7 @@
 					<ul class="navbar flex-center">
 						<li><a href="#">Home</a></li>
 						<li><a href="#">Shop</a></li>
-						<li>
+						<li class="has-child">
 							<a href="#"
 								>Women<span><i class="fa-solid fa-chevron-down"></i></span
 							></a>
@@ -147,8 +147,8 @@
 											<a
 												href="#"
 												class="all-brands-link"
-												>All Brands</a
-											>
+												>All Brands<i class="fa-solid fa-arrow-right"></i
+											></a>
 										</li>
 									</ul>
 								</div>
@@ -159,7 +159,11 @@
 									/>
 									<div class="most-wanted">
 										<h4>Most Wanted!</h4>
-										<a href="#">Order Now</a>
+										<a
+											class="main-button"
+											href="#"
+											>Order Now</a
+										>
 									</div>
 								</div>
 							</div>
@@ -192,6 +196,33 @@
 						</div>
 					</ul>
 				</nav>
+			</div>
+			<div class="header-all-dept-searcher header-container">
+				<nav>
+					<div class="all-departments">
+						<p>All Departments</p>
+						<i class="fa-solid fa-bars"></i>
+					</div>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</nav>
+				<div class="searcher">
+					<input
+						type="search"
+						name="product"
+						id="searcher"
+					/>
+					<input
+						type="submit"
+						value="Search"
+					/>
+				</div>
 			</div>
 		</header>
 		<main></main>
